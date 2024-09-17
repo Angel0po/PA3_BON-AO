@@ -125,7 +125,6 @@ df_cars.iloc[:5,::2]
 df_cars.loc[df_cars['Model']=='Mazda RX4']
 
 
-
 # Uses .loc to locate and print information that has the key value: 'Model' is equal to 'Mazda RX4'
 # This time the syntax next to locating the model is the specified info/column to be printed
 df_cars.loc[(df_cars['Model']=='Camaro Z28'), ['cyl']]
