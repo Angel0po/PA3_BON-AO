@@ -5,9 +5,9 @@ This repository contains 3 files, which are Bon-ao_Pandas-P1.py, Bon-ao_Pandas-P
 
 ---
 
-### GIVEN PROBLEMS TO SOLVE
+## GIVEN PROBLEMS TO SOLVE
 
-##### PROBLEM 1️⃣
+#### PROBLEM 1️⃣
 
 Using knowledge obtained from the experiment and demonstrations:
 
@@ -15,7 +15,7 @@ a. Load the corresponding .csv file into a data frame named cars using pandas
 
 b. Display the first five and last five rows of the resulting cars.
 
-##### PROBLEM 2️⃣
+#### PROBLEM 2️⃣
 
 Using the dataframe cars in problem 1, extract the following information using subsetting, slicing and
 indexing operations.
