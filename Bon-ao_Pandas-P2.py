@@ -1,8 +1,57 @@
 {
  "cells": [
   {
+   "cell_type": "markdown",
+   "id": "5dd6f88d-e9ab-4685-a406-244e613735cb",
+   "metadata": {},
+   "source": [
+    "# Programming Assignment 3 - PYTHON DATA ANALYSIS (PANDAS)"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "d36d7f9b-e81d-4763-9c1b-062d1c17d6e5",
+   "metadata": {},
+   "source": [
+    "### PROBLEM 2: Save your file as Surname_Pandas-P2.py"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "5b89b72a-21d1-40d5-840b-abd9e1cc4ffb",
+   "metadata": {},
+   "source": [
+    "##### Using the dataframe cars in problem 1, extract the following information using subsetting, slicing and \n",
+    "##### indexing operations."
+   ]
+  },
+  {
    "cell_type": "code",
-   "execution_count": 133,
+   "execution_count": 4,
+   "id": "288a5454-07d0-40aa-a51b-abc0b3ef29fd",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "#start\n",
+    "\n",
+    "#Import library of PANDAS\n",
+    "import pandas as pd\n",
+    "\n",
+    "#Load csv file into a data frame named cars using pandas\n",
+    "df_cars = pd.read_csv('cars.csv')"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "4cf30c2d-786e-4657-87e3-7ad6bfb0bca4",
+   "metadata": {},
+   "source": [
+    "##### a. Display the first five rows with odd-numbered columns (columns 1, 3, 5, 7…) of cars."
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 6,
    "id": "d6625282-e697-43c4-9a3e-68c25e2a8d8d",
    "metadata": {},
    "outputs": [
@@ -94,7 +143,7 @@
        "4  Hornet Sportabout    8  175  3.440   0     3"
       ]
      },
-     "execution_count": 133,
+     "execution_count": 6,
      "metadata": {},
      "output_type": "execute_result"
     }
@@ -102,12 +151,21 @@
    "source": [
     "#start\n",
     "\n",
-    "#Store data collected from the data frame of cars from all the rows ' : ' and every second column ' ::2 ' starting from the first column.\n",
-    "#: - signifying rows, :: signifying columns -> ::2 columns with the interval of 2\n",
-    "odd_columns_cars = df_cars.iloc[:,::2]\n",
+    "# The condition :5 inside the square bracket selects the first 5 rows of the DataFrame but does not include the upper range, 5th row, to be printed\n",
     "\n",
-    "#Prints the first five rows of the stored data\n",
-    "odd_columns_cars[0:5]"
+    "df_cars.iloc[:5,::2]\n",
+    "\n",
+    "# The double colon ::2 slices every two steps of the column\n",
+    "\n",
+    "#end"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "73243ba0-df19-48ac-b2d3-9a4a0e3f37b7",
+   "metadata": {},
+   "source": [
+    "##### b. Display the row that contains the ‘Model’ of ‘Mazda RX4’."
    ]
   },
   {
@@ -187,6 +245,14 @@
    ]
   },
   {
+   "cell_type": "markdown",
+   "id": "724c95ea-06d7-4171-8b5e-05f2947c6ddc",
+   "metadata": {},
+   "source": [
+    "##### c. How many cylinders (‘cyl’) does the car model ‘Camaro Z28’ have?"
+   ]
+  },
+  {
    "cell_type": "code",
    "execution_count": 49,
    "id": "62525dd1-43c9-4ce5-8c13-ba3d18f0fe6b",
@@ -239,6 +305,15 @@
     "#Uses .loc to locate and print information that has the key value : 'Model' is equal to 'Mazda RX4'\n",
     "#This time the syntax next to locating the model is the specified info/column to be printed\n",
     "df_cars.loc[(df_cars['Model']=='Camaro Z28'), ['cyl']]"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "2c851ce7-0f95-43cb-90cc-92c469d62994",
+   "metadata": {},
+   "source": [
+    "##### d. Determine how many cylinders (‘cyl’) and what gear type (‘gear’) do the car models ‘Mazda RX4 \n",
+    "##### Wag’, ‘Ford Pantera L’ and ‘Honda Civic’ have."
    ]
   },
   {
@@ -309,7 +384,6 @@
     }
    ],
    "source": [
-    "\n",
     "#Create list of car models needed for information\n",
     "car_models = ['Mazda RX4','Ford Pantera L','Honda Civic']\n",
     "\n",
