@@ -60,6 +60,7 @@ df_cars.head()
 #use .tail() to display the last five rows of the data frame of cars
 df_cars.tail()
 
+#end
 ```
 
 ### OUTPUT
@@ -101,14 +102,67 @@ For the 2nd part of problem 2, we have to use ``` .loc[] ``` command and input t
 For the 3rd part of problem 2, we have to use the same syntax as before in the 2nd part, only this time, we have to set a 2nd condition to only print out the 'cyl' information of the car 'Camaro Z28'.
 We can do that by adding ``` [cyl] ``` at the end of the condition, the resulting code would be ``` df_cars.loc[(df_cars['Model']=='Camaro Z28'), ['cyl']] ```
 
-For the last part of problem 2, to determine the 'cyl' information 
+For the last part of problem 2, to determine the 'cyl' information of the different cars, I created a list of the cars needed for the problem and used ``` .loc[] ``` and ``` .isin() ```commands. The right conditions can now be set for the given problem using these commands and the curated list of select cars. The ``` .isin() ``` serves to check if the car is on the list and the ``` .loc[] ``` serves to locate the information about the cars in the data frame. Finally placing ``` ['Model','cyl','gear'] ``` at the end of the condition, same as what we did for 3rd part, it prints out those columns only.
+
+The resulting code will look like this ``` df_cars.loc[df_cars['Model'].isin(car_models),['Model','cyl','gear']] ``` 
+
+### CODE
+
+``` python
+
+#start
+
+# For part a.
+
+# The condition :5 inside the square bracket selects the first 5 rows of the data frame but does not include the upper range, 5th row, to be printed
+df_cars.iloc[:5,::2]
+
+# The double colon ::2 slices every two steps of the column
+
+# For part b.
+
+# Uses .loc to locate and print the row that has the key value : 'Model' is equal to 'Mazda RX4'
+df_cars.loc[df_cars['Model']=='Mazda RX4']
 
 
 
+# Uses .loc to locate and print information that has the key value: 'Model' is equal to 'Mazda RX4'
+# This time the syntax next to locating the model is the specified info/column to be printed
+df_cars.loc[(df_cars['Model']=='Camaro Z28'), ['cyl']]
 
+#Create list of car models needed for information
+car_models = ['Mazda RX4','Ford Pantera L','Honda Civic']
 
+#Uses .loc to locate the key values of the model of a car and prints specified information
+#Uses .isin to check if any 'Model' in the data frame is in the created list of car models
+df_cars.loc[df_cars['Model'].isin(car_models),['Model','cyl','gear']]
 
+#end
+```
 
-For the 2nd part of problem 2, which is to display the row of the car 'Mazda RX4'. We have to use the ``` .loc[] ``` command and input the conditions inside the square bracket
+### OUTPUT
 
+for ``` For part a. ```
 
+``` python
+df_cars.iloc[:5,::2]
+
+|     | Model            | cyl | hp  | wt    | vs | gear |
+|-----|------------------|-----|-----|-------|----|------|
+| 0   | Mazda RX4        | 6   | 110 | 2.620 | 0  | 4    |
+| 1   | Mazda RX4 Wag    | 6   | 110 | 2.875 | 0  | 4    |
+| 2   | Datsun 710       | 4   | 93  | 2.320 | 1  | 4    |
+| 3   | Hornet 4 Drive   | 6   | 110 | 3.215 | 1  | 3    |
+| 4   | Hornet Sportabout| 8   | 175 | 3.440 | 0  | 3    |
+```
+
+for ``` For part b. ```
+
+``` python
+df_cars.loc[df_cars['Model']=='Mazda RX4']
+
+## Car Specifications
+
+|     | Model     | mpg | cyl | disp | hp  | drat | wt   | qsec | vs | am | gear | carb |
+|-----|-----------|-----|-----|------|-----|------|------|------|----|----|------|------|
+| 0   | Mazda RX4 | 21  | 6   | 160  | 110 | 3.9  | 2.62 | 16.46| 0  | 1  | 4    | 4    |
