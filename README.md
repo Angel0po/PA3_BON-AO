@@ -76,6 +76,10 @@ df_cars.head()
 | Hornet 4 Drive     | 21.4 |  6  | 258.0 | 110  | 3.08 | 3.215 | 19.44 |  1 |  0 |  3   |  1   |
 | Hornet Sportabout  | 18.7 |  8  | 360.0 | 175  | 3.15 | 3.440 | 17.02 |  0 |  0 |  3   |  2   |
 
+``` python
+df_cars.tail()
+```
+
 
 
 
