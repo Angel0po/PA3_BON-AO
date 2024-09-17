@@ -5,9 +5,11 @@ This repository contains 3 files, which are Bon-ao_Pandas-P1.py, Bon-ao_Pandas-P
 
 ---
 
-## GIVEN PROBLEMS TO SOLVE
+## GIVEN 
 
-#### PROBLEM 1️⃣
+For this programming assignment, download the following file and save to your default user folder: http://bit.ly/Cars_file
+
+### PROBLEM 1️⃣
 
 Using knowledge obtained from the experiment and demonstrations:
 
@@ -15,7 +17,7 @@ a. Load the corresponding .csv file into a data frame named cars using pandas
 
 b. Display the first five and last five rows of the resulting cars.
 
-#### PROBLEM 2️⃣
+### PROBLEM 2️⃣
 
 Using the dataframe cars in problem 1, extract the following information using subsetting, slicing and
 indexing operations.
@@ -28,6 +30,22 @@ c. How many cylinders (‘cyl’) does the car model ‘Camaro Z28’ have?
 
 d. Determine how many cylinders (‘cyl’) and what gear type (‘gear’) do the car models ‘Mazda RX4 Wag’, ‘Ford Pantera L’ and ‘Honda Civic’ have.
 
-~one
+---
+## SOLUTIONS
+
+### PROBLEM 1️⃣
+
+The first problem is divided into two tasks, the first of which is to load the .csv file that we have downloaded from http://bit.ly/Cars_file into dataframe named cars using pandas, and secondly, displaying the first five and last five rows of the dataframe
+
+For the first task, we have to use 
+``` python
+pd.read_csv()
+```
+to load and read the cars csv file as a dataframe
+
+
+
+
+
 
 
