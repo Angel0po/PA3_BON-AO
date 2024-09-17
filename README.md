@@ -80,7 +80,7 @@ df_cars.head()
 df_cars.tail()
 ```
 
-| --- | Model             | mpg  | cyl | disp  | hp   | drat | wt    | qsec  | vs | am | gear | carb |
+|  | Model             | mpg  | cyl | disp  | hp   | drat | wt    | qsec  | vs | am | gear | carb |
 |----|-------------------|------|-----|-------|------|------|-------|-------|----|----|------|------|
 | 27 | Lotus Europa      | 30.4 |  4  | 95.1  | 113  | 3.77 | 1.513 | 16.90 |  1 |  1 |  5   |  2   |
 | 28 | Ford Pantera L    | 15.8 |  8  | 351.0 | 264  | 4.22 | 3.170 | 14.50 |  0 |  1 |  5   |  4   |
