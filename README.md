@@ -195,4 +195,9 @@ df_cars.loc[df_cars['Model'].isin(car_models),['Model','cyl','gear']]
 | 28  | Ford Pantera L  | 8   | 5    |
 ---
 
+### BUILT WITH
+* Jupyter Notebook Ver 7.0.8
+* Python 3.12.4
 
+### AUTHOR
+* Bon-ao, Angelo Balao-as - @Angel0po
