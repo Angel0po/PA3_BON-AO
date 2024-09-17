@@ -146,7 +146,7 @@ df_cars.loc[df_cars['Model'].isin(car_models),['Model','cyl','gear']]
 
 ### OUTPUT
 ---
-##### Part a.
+#### Part a.
 
 ``` python
 df_cars.iloc[:5,::2]
@@ -159,7 +159,7 @@ df_cars.iloc[:5,::2]
 | 3   | Hornet 4 Drive   | 6   | 110 | 3.215 | 1  | 3    |
 | 4   | Hornet Sportabout| 8   | 175 | 3.440 | 0  | 3    |
 
-##### Part b.
+#### Part b.
 
 ``` python
 df_cars.loc[df_cars['Model']=='Mazda RX4']
@@ -169,7 +169,7 @@ df_cars.loc[df_cars['Model']=='Mazda RX4']
 |-----|-----------|-----|-----|------|-----|------|------|------|----|----|------|------|
 | 0   | Mazda RX4 | 21  | 6   | 160  | 110 | 3.9  | 2.62 | 16.46| 0  | 1  | 4    | 4    |
 
-##### Part c.
+#### Part c.
 
 ``` python
 df_cars.loc[(df_cars['Model']=='Camaro Z28'), ['cyl']]
@@ -179,7 +179,7 @@ df_cars.loc[(df_cars['Model']=='Camaro Z28'), ['cyl']]
 |----|----|
 | 23 | 8 |
 
-##### Part d. 
+#### Part d. 
 
 ``` python
 car_models = ['Mazda RX4','Ford Pantera L','Honda Civic']
