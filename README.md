@@ -88,7 +88,27 @@ df_cars.tail()
 | 30 | Maserati Bora     | 15.0 |  8  | 301.0 | 335  | 3.54 | 3.570 | 14.60 |  0 |  1 |  5   |  8   |
 | 31 | Volvo 142E        | 21.4 |  4  | 121.0 | 109  | 4.11 | 2.780 | 18.60 |  1 |  1 |  4   |  2   |
 
+---
+
+### PROBLEM 2️⃣
+
+Problem 2 has four parts in total, the first being to display the first five rows. To be able to do this, we to have to use the ``` .iloc[] ``` command and input the right conditions for the given problem. 
+
+In python, : represents rows and :: represents columns, setting the range to be :5 makes it so that the range of rows to be printed are the first four rows of the cars data frame. Inputting the 2nd condition to be ::2 represents that starting from the first column, it will get the info from the first column and every column of 2 steps from the first column. ``` df_cars.iloc[:5,::2] ```
+
+For the 2nd part of problem 2, we have to use ``` .loc[] ``` command and input the right conditions to display the row that contains the ‘Model’ of ‘Mazda RX4’. The conditions can be set as ``` df_cars['Model']=='Mazda RX4' ``` wherein the data frame of cars finds the row and only that row that has the car Mazda RX4.
+
+For the 3rd part of problem 2, we have to use the same syntax as before in the 2nd part, only this time, we have to set a 2nd condition to only print out the 'cyl' information of the car 'Camaro Z28'.
+We can do that by adding ``` [cyl] ``` at the end of the condition, the resulting code would be ``` df_cars.loc[(df_cars['Model']=='Camaro Z28'), ['cyl']] ```
+
+For the last part of problem 2, to determine the 'cyl' information 
 
 
+
+
+
+
+
+For the 2nd part of problem 2, which is to display the row of the car 'Mazda RX4'. We have to use the ``` .loc[] ``` command and input the conditions inside the square bracket
 
 
