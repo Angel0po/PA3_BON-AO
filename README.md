@@ -64,7 +64,8 @@ df_cars.tail()
 
 ### OUTPUT
 
-| ---  | Model |
+| --- | Model |
+| --- | --- |
 | 0 | Mazda RX4 |
 | 1 | Mazda RX4 Wag |
 | 2 | Datsun 710 |
