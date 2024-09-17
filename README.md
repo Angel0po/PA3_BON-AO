@@ -124,10 +124,13 @@ df_cars.iloc[:5,::2]
 # Uses .loc to locate and print the row that has the key value : 'Model' is equal to 'Mazda RX4'
 df_cars.loc[df_cars['Model']=='Mazda RX4']
 
+# For part c.
 
 # Uses .loc to locate and print information that has the key value: 'Model' is equal to 'Mazda RX4'
 # This time the syntax next to locating the model is the specified info/column to be printed
 df_cars.loc[(df_cars['Model']=='Camaro Z28'), ['cyl']]
+
+# For part d.
 
 #Create list of car models needed for information
 car_models = ['Mazda RX4','Ford Pantera L','Honda Civic']
@@ -141,7 +144,7 @@ df_cars.loc[df_cars['Model'].isin(car_models),['Model','cyl','gear']]
 
 ### OUTPUT
 
-for ``` For part a. ```
+For part a.
 
 ``` python
 df_cars.iloc[:5,::2]
@@ -154,8 +157,7 @@ df_cars.iloc[:5,::2]
 | 3   | Hornet 4 Drive   | 6   | 110 | 3.215 | 1  | 3    |
 | 4   | Hornet Sportabout| 8   | 175 | 3.440 | 0  | 3    |
 
-
-for ``` For part b. ```
+For part b.
 
 ``` python
 df_cars.loc[df_cars['Model']=='Mazda RX4']
@@ -164,3 +166,32 @@ df_cars.loc[df_cars['Model']=='Mazda RX4']
 |     | Model     | mpg | cyl | disp | hp  | drat | wt   | qsec | vs | am | gear | carb |
 |-----|-----------|-----|-----|------|-----|------|------|------|----|----|------|------|
 | 0   | Mazda RX4 | 21  | 6   | 160  | 110 | 3.9  | 2.62 | 16.46| 0  | 1  | 4    | 4    |
+
+For part c.
+
+``` python
+df_cars.loc[(df_cars['Model']=='Camaro Z28'), ['cyl']]
+```
+
+|    | cyl | 
+|----|----|
+| 23 | 8 |
+
+For part d. 
+
+``` python
+car_models = ['Mazda RX4','Ford Pantera L','Honda Civic']
+
+df_cars.loc[df_cars['Model'].isin(car_models),['Model','cyl','gear']]
+```
+
+
+|    | Model           | cyl | gear |
+|-----|-----------------|-----|------|
+| 0   | Mazda RX4       | 6   | 4    |
+| 18  | Honda Civic     | 4   | 4    |
+| 28  | Ford Pantera L  | 8   | 5    |
+
+---
+
+
