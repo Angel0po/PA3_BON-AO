@@ -40,6 +40,7 @@ The first problem is divided into two tasks, the first of which is to load the .
 For the first task, we must use ``` pd.read_csv() ``` to load and read the cars csv file as a dataframe. I stored the csv file to 'df_cars' to highlight that it is a dataframe due to 'df' and the information inside is about cars. For the second task, we must use ``` .head() and .tail() ```. The .head() command prints out the first five rows by default and the .tail() command prints out the last five rows by default, so no need to input a number for the condition.
 
 ### CODE
+---
 ``` python
 
 #start
@@ -62,6 +63,7 @@ df_cars.tail()
 
 #end
 ```
+---
 
 ### OUTPUT
 
