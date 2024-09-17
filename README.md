@@ -145,7 +145,7 @@ for ``` For part a. ```
 
 ``` python
 df_cars.iloc[:5,::2]
-
+```
 |     | Model            | cyl | hp  | wt    | vs | gear |
 |-----|------------------|-----|-----|-------|----|------|
 | 0   | Mazda RX4        | 6   | 110 | 2.620 | 0  | 4    |
@@ -153,14 +153,13 @@ df_cars.iloc[:5,::2]
 | 2   | Datsun 710       | 4   | 93  | 2.320 | 1  | 4    |
 | 3   | Hornet 4 Drive   | 6   | 110 | 3.215 | 1  | 3    |
 | 4   | Hornet Sportabout| 8   | 175 | 3.440 | 0  | 3    |
-```
+
 
 for ``` For part b. ```
 
 ``` python
 df_cars.loc[df_cars['Model']=='Mazda RX4']
-
-## Car Specifications
+```
 
 |     | Model     | mpg | cyl | disp | hp  | drat | wt   | qsec | vs | am | gear | carb |
 |-----|-----------|-----|-----|------|-----|------|------|------|----|----|------|------|
