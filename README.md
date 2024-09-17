@@ -66,7 +66,7 @@ df_cars.tail()
 ---
 
 ### OUTPUT
-
+---
 ``` python
 df_cars.head()
 ```
@@ -90,7 +90,6 @@ df_cars.tail()
 | 29 | Ferrari Dino      | 19.7 |  6  | 145.0 | 175  | 3.62 | 2.770 | 15.50 |  0 |  1 |  5   |  6   |
 | 30 | Maserati Bora     | 15.0 |  8  | 301.0 | 335  | 3.54 | 3.570 | 14.60 |  0 |  1 |  5   |  8   |
 | 31 | Volvo 142E        | 21.4 |  4  | 121.0 | 109  | 4.11 | 2.780 | 18.60 |  1 |  1 |  4   |  2   |
-
 ---
 
 ### PROBLEM 2️⃣
@@ -109,7 +108,7 @@ For the last part of problem 2, to determine the 'cyl' information of the differ
 The resulting code will look like this ``` df_cars.loc[df_cars['Model'].isin(car_models),['Model','cyl','gear']] ``` 
 
 ### CODE
-
+---
 ``` python
 
 #start
@@ -143,9 +142,10 @@ df_cars.loc[df_cars['Model'].isin(car_models),['Model','cyl','gear']]
 
 #end
 ```
+---
 
 ### OUTPUT
-
+---
 For part a.
 
 ``` python
@@ -193,7 +193,6 @@ df_cars.loc[df_cars['Model'].isin(car_models),['Model','cyl','gear']]
 | 0   | Mazda RX4       | 6   | 4    |
 | 18  | Honda Civic     | 4   | 4    |
 | 28  | Ford Pantera L  | 8   | 5    |
-
 ---
 
 
