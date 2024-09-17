@@ -35,15 +35,43 @@ d. Determine how many cylinders (‘cyl’) and what gear type (‘gear’) do t
 
 ### PROBLEM 1️⃣
 
-The first problem is divided into two tasks, the first of which is to load the .csv file that we have downloaded from http://bit.ly/Cars_file into dataframe named cars using pandas, and secondly, displaying the first five and last five rows of the dataframe
+The first problem is divided into two tasks, the first of which is to load the .csv file that we have downloaded from http://bit.ly/Cars_file into dataframe named cars using pandas, and secondly, displaying the first five and last five rows of the data frame.
 
-For the first task, we have to use 
+For the first task, we must use ``` pd.read_csv() ``` to load and read the cars csv file as a dataframe. I stored the csv file to 'df_cars' to highlight that it is a dataframe due to 'df' and the information inside is about cars. For the second task, we must use ``` .head() and .tail() ```. The .head() command prints out the first five rows by default and the .tail() command prints out the last five rows by default, so no need to input a number for the condition.
+
+### CODE
 ``` python
-pd.read_csv()
+
+#start
+
+#Import library of PANDAS
+import pandas as pd
+
+#For part a.
+
+#Load csv file into a data frame named cars using pandas
+df_cars = pd.read_csv('cars.csv')
+
+#For part b.
+
+#use .head() to display the first five rows of the data frame of cars
+df_cars.head()
+
+#use .tail() to display the last five rows of the data frame of cars
+df_cars.tail()
+
 ```
-to load and read the cars csv file as a dataframe
 
+### OUTPUT
 
+``` python
+Model	mpg	cyl	disp	hp	drat	wt	qsec	vs	am	gear	carb
+0	Mazda RX4	21.0	6	160.0	110	3.90	2.620	16.46	0	1	4	4
+1	Mazda RX4 Wag	21.0	6	160.0	110	3.90	2.875	17.02	0	1	4	4
+2	Datsun 710	22.8	4	108.0	93	3.85	2.320	18.61	1	1	4	1
+3	Hornet 4 Drive	21.4	6	258.0	110	3.08	3.215	19.44	1	0	3	1
+4	Hornet Sportabout	18.7	8	360.0	175	3.15	3.440	17.02	0	0	3	2
+```
 
 
 
